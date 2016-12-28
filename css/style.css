@@ -1,0 +1,232 @@
+/* Demo styling */
+body {
+  background-color: #eee;
+  box-sizing: border-box;
+  font-family: "Futura PT", "Futura", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Buttons at the center */
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -259px;
+  margin-left: -89px;
+  text-align: center;
+}
+
+/* General styling for the links */
+a {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* BUTTON 1 */
+.btn, .btn:link, .btn:visited {
+  color: #2c3e50;
+  line-height: 1em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
+  border: 0.2em solid #2c3e50;
+  padding: 0.8em;
+  text-align: center;
+  -webkit-transition: 0.25s box-shadow, 0.25s -webkit-transform;
+  transition: 0.25s box-shadow, 0.25s -webkit-transform;
+  transition: 0.25s box-shadow, 0.25s transform;
+  transition: 0.25s box-shadow, 0.25s transform, 0.25s -webkit-transform;
+}
+.btn:hover, .btn:link:hover, .btn:visited:hover {
+  box-shadow: 0 4em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
+  -webkit-transform: translate(0.3em, 0.2em);
+          transform: translate(0.3em, 0.2em);
+  color: #fff;
+}
+
+/* BUTTON 2 */
+.btn2, .btn2:link, .btn2:visited {
+  background-color: #5b657c;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+  color: #fff;
+  letter-spacing: .1em;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: box-shadow 0.5s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+}
+.btn2:hover, .btn2:link:hover, .btn2:visited:hover {
+  box-shadow: 0 0 0 28px rgba(0, 0, 0, 0.25) inset;
+}
+.btn2:active, .btn2:link:active, .btn2:visited:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+/* BUTTON 3 */
+.btn3, .btn3:link, .btn3:visited {
+  color: #333;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  min-width: 100px;
+  max-width: 60%;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.btn3:after, .btn3:before, .btn3:link:after, .btn3:link:before, .btn3:visited:after, .btn3:visited:before {
+  content: "";
+  position: absolute;
+  left: -1em;
+  top: -2px;
+  height: 3.3em;
+  width: 0;
+  border: 1px solid #c75842;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+.btn3:after, .btn3:link:after, .btn3:visited:after {
+  left: auto;
+  right: -1em;
+}
+.btn3:hover, .btn3:link:hover, .btn3:visited:hover {
+  border-color: #c75842;
+  -webkit-transition: border-color 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: border-color 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.btn3:hover:after, .btn3:hover:before, .btn3:link:hover:after, .btn3:link:hover:before, .btn3:visited:hover:after, .btn3:visited:hover:before {
+  right: -2px;
+  -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.btn3:hover:before, .btn3:link:hover:before, .btn3:visited:hover:before {
+  left: -2px;
+  right: auto;
+}
+
+/* BUTTON 4 */
+.btn4, .btn4:link, .btn4:visited {
+  background: #f1c40f;
+  color: #fefefe;
+  -webkit-transition: box-shadow .18s ease;
+  transition: box-shadow .18s ease;
+}
+.btn4:hover, .btn4:link:hover, .btn4:visited:hover {
+  box-shadow: inset 0 0 0 5px #c29d0b;
+}
+
+/* BUTTON 5 */
+.btn5, .btn5:link, .btn5:visited {
+  border: none;
+  outline: none;
+  color: #fefefe;
+  background-color: #9b59b6;
+  border-radius: 3px;
+}
+.btn5:hover, .btn5:focus, .btn5:link:hover, .btn5:link:focus, .btn5:visited:hover, .btn5:visited:focus {
+  -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+          transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  -webkit-animation: gelatine 0.5s 1;
+          animation: gelatine 0.5s 1;
+}
+
+@-webkit-keyframes gelatine {
+  from,to {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+  }
+  from,to {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+  }
+}
+@keyframes gelatine {
+  from,to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+  from,to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+}
+/* BUTTON 6 */
+.btn6, .btn6:link, .btn6:visited {
+  padding: 13px 0;
+  border: 1px solid #333;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.btn6:hover, .btn6:link:hover, .btn6:visited:hover {
+  background: #333;
+  border: 1px solid #333;
+  color: #fefefe;
+  border-radius: 30px;
+}
